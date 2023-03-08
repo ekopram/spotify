@@ -1,3 +1,4 @@
+<!-- sampai 24:00 -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +8,125 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>
-        We are using Node.js <span id="node-version"></span>,
-        Chromium <span id="chrome-version"></span>,
-        and Electron <span id="electron-version"></span>.
-    </p>
+    <div class="container">
+        <div class="left"></div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="assets/Home.svg" alt="" class="gray-filtered">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/Search.svg" alt="" class="gray-filtered">
+                        <span>Search</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/YourLibrary.svg" alt="" class="gray-filtered">
+                        <span>Your Library</span>
+                    </a>
+                </li>
+                <div style="height: 20px;"></div>
+                <li>
+                    <a href="#">
+                        <img src="assets/CreatePlaylist.svg" alt="" class="gray-filtered">
+                        <span>Create Playlist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/Like.svg" alt="" class="gray-filtered">
+                        <span>Liked songs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr width="100%">
+        <div style="height: 20px"></div>
+        <div class="menu playlists">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span>Chill Vibes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Summer Hits</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Workout Motifation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Party time</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Road Trip</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Classical Masterpiece</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Jazz for Relaxation</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="current-song-cover">
+            <img src="images/song-cover.jpeg" alt="">
+        </div>
+        <div class="right">
+            <div class="playlist-header">
+                <div class="playlist-top">
+                    <div class="playlist-arrows">
+                        <div class="arrow-container">
+                            <img src="assets/RightArrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="playlist-top-email">
+                        <div class="arrow-container">
+                            <img src="assets/Profile.svg" alt="">
+                        </div>
+                        <span> servet.gulnaro...</span>
+                    </div>
+                </div>
+                <div class="playlist-content">
+                    <div class="playlist-cover">
+                        <img src="images/playlist-cover.png" alt="">
+                    </div>
+                    <div class="playlist-info">
+                        <div class="playlist-public">PUBLIC PLAYLIST</div>
+                        <div class="playlist-title">
+                            Classic Road Trip Songs
+                        </div>
+                        <div class="playlist-description">
+                            A soundtrack to fuel your mood while on the road.
+                        </div>
+                        <div class="playlist-stats">
+                            <img src="assets/spotify-logo.png" alt="" width="24px" height="24px">
+                            <span> Spotify </span>
+                            <span>5,133,282 likes</span>
+                            <span>100 songs</span>
+                            <span>6 hr 59 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div> 
 </body>
 </html>
