@@ -91,7 +91,7 @@ body {
     left: 0px;
 }
 
-.curent-song-cover img {
+.current-song-cover img {
     position: absolute;
     width: 100%;
     bottom: 120px;
@@ -120,7 +120,7 @@ body {
     align-items: center;
 }
 
-,right {
+.right {
     width: 100%;
 }
 
@@ -221,15 +221,33 @@ padding: 20px;
     align-items: center;
 }
 
-.playlist-button-like, .playlist-button-download, .playlist-button-three-dot {
+.playlist-buttons-like svg path{
+    fill: var(--spotify-green) ;
+}
+.playlist-buttons-like {
     margin-left: 20px;
 }
-
-.playlist.button-order {
-    color: #A9A9A9;
-    position: relative;
-    top: -2px;
+.playlist-songs-container {
+    height: 1000px;
+    padding: 20px;
+    background: rgb(95,95,95);
+background: linear-gradient(180deg, rgba(95,95,95,1) 0%, rgba(18,18,18,1) 22%, rgba(18,18,18,1) 100%);
+}
+.playlist-buttons-download, .playlist-buttons-three-dot {
     margin-left: 20px;
+}
+.playlist-buttons-download svg path, .playlist-buttons-three-dot svg path, .playlist-buttons-search svg path {
+    fill: #CACACA;
+}
+.playlist-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.playlist-buttons-order {
+    color:#CACACA;
+}
+.playlist-buttons-order {
+    padding-left: 20px;
 }
 
 .playlist-songs {
@@ -241,7 +259,7 @@ padding: 20px;
     width: 100%;
 }
 
-.playlist table tr td, .playlist-songs tr th {
+.playlist-songs table tr td, .playlist-songs tr th {
     padding: 10px;
     color: #cacaca;
 }
@@ -297,7 +315,7 @@ padding: 20px;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    /* background-color: #a9a9a9; */
+    background-color: #a9a9a9;
     position: absolute;
     bottom: 0;
     width: 100%;
