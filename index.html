@@ -3,13 +3,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Spotify</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="left"></div>
+        <div class="left">
+        <div style="height: 20px"></div>
         <div class="menu">
             <ul>
                 <li>
@@ -30,7 +31,7 @@
                         <span>Your Library</span>
                     </a>
                 </li>
-                <div style="height: 20px;"></div>
+                <div style="height: 30px"></div>
                 <li>
                     <a href="#">
                         <img src="assets/CreatePlaylist.svg" alt="" class="gray-filtered">
@@ -84,15 +85,85 @@
                         <span>Jazz for Relaxation</span>
                     </a>
                 </li>
+                <li>
+                <a href="#">
+                <span>Rap and Hip-Hop</span>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                <span>Rock Classics</span>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                <span>Morning Wake Up</span>
+                </a>
+                </li>
+                
+                <li>
+                <a href="#">
+                <span>Chill Vibes</span>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                <span>Summer Hits</span>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                <span>Workout Motivation</span>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                <span>Party Time</span>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                <span>Road Trip</span>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                <span>Classical Masterpieces</span>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                <span>Jazz for Relaxation</span>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                <span>Rap and Hip-Hop</span>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                <span>Rock Classics</span>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                <span>Morning Wake Up</span>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="current-song-cover">
             <img src="images/song-cover.jpeg" alt="">
         </div>
+    </div>
         <div class="right">
             <div class="playlist-header">
                 <div class="playlist-top">
                     <div class="playlist-arrows">
+                        <div class="arrow-container">
+                            <img src="assets/LeftArrow.svg" alt="">
+                        </div>
                         <div class="arrow-container">
                             <img src="assets/RightArrow.svg" alt="">
                         </div>
@@ -116,37 +187,38 @@
                         <div class="playlist-description">
                             A soundtrack to fuel your mood while on the road.
                         </div>
+                        <div style="height: 10px;"></div>
                         <div class="playlist-stats">
                             <img src="assets/spotify-logo.png" alt="" width="24px" height="24px">
                             <span> Spotify </span>
                             <span>5,133,282 likes</span>
                             <span>100 songs</span>
-                            <span style="font-weight: 200;">6 hr 59 min</span>
+                            <span>6 hr 59 min</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="playlist-songs-container">
                 <div class="playlist-buttons">
-                    <div class="playlist-button-left">
-                        <div class="playlist-button-resume-pause">
+                    <div class="playlist-buttons-left">
+                        <div class="playlist-buttons-resume-pause">
                             <img src="assets/Pause.svg" alt="">
                         </div>
-                        <div class="playlist-button-like">
+                        <div class="playlist-buttons-like">
                             <img src="assets/FiiledLike.svg" alt="" class="spotify-color">
                         </div>
-                        <div class="playlist-button-download">
+                        <div class="playlist-buttons-download">
                             <img src="assets/Download.svg" alt="">
                         </div>
-                        <div class="playlist-button-three-dot">
+                        <div class="playlist-buttons-three-dot">
                             <img src="assets/ThreeDots.svg" alt="">
                         </div>
                     </div>
-                    <div class="playlist-button-right">
-                        <div class="playlist-button-search">
+                    <div class="playlist-buttons-right">
+                        <div class="playlist-buttons-search">
                             <img src="assets/Search.svg" alt="">
                         </div>
-                        <div class="playlist button order">
+                        <div class="playlist buttons order">
                             Custom Order
                         </div>
                     </div>
@@ -160,20 +232,17 @@
                             <th>DATE ADDED</th>
                             <th><img src="assets/Duration.svg" alt=""></th>
                         </tr>
-                        <tr style="height: 20px;">
-
-                        </tr>
                         <tr>
                             <td>5</td>
                             <td class="song-title">
                                 <div class="song-image">
                                     <img src="images/song-cover.jpeg" alt="">
                                 </div>
-                                <div class="song-name-artist">
+                                <div class="song-name-album">
                                     <div class="song-name">
                                         Young  as the morning old as the sea
                                     </div>
-                                    <div class="song-artis">Passenger</div>
+                                    <div class="song-artist">Passenger</div>
                                 </div>
                             </td>
                             <td class="song-album">
@@ -190,11 +259,11 @@
                                 <div class="song-image">
                                     <img src="images/song-cover.jpeg" alt="">
                                 </div>
-                                <div class="song-name-artist">
+                                <div class="song-name-album">
                                     <div class="song-name">
                                         Young  as the morning old as the sea
                                     </div>
-                                    <div class="song-artis">Passenger</div>
+                                    <div class="song-artist">Passenger</div>
                                 </div>
                             </td>
                             <td class="song-album">
@@ -211,11 +280,11 @@
                                 <div class="song-image">
                                     <img src="images/song-cover.jpeg" alt="">
                                 </div>
-                                <div class="song-name-artist">
+                                <div class="song-name-album">
                                     <div class="song-name">
                                         Young  as the morning old as the sea
                                     </div>
-                                    <div class="song-artis">Passenger</div>
+                                    <div class="song-artist">Passenger</div>
                                 </div>
                             </td>
                             <td class="song-album">
@@ -232,11 +301,11 @@
                                 <div class="song-image">
                                     <img src="images/song-cover.jpeg" alt="">
                                 </div>
-                                <div class="song-name-artist">
+                                <div class="song-name-album">
                                     <div class="song-name">
                                         Young  as the morning old as the sea
                                     </div>
-                                    <div class="song-artis">Passenger</div>
+                                    <div class="song-artist">Passenger</div>
                                 </div>
                             </td>
                             <td class="song-album">
@@ -253,11 +322,11 @@
                                 <div class="song-image">
                                     <img src="images/song-cover.jpeg" alt="">
                                 </div>
-                                <div class="song-name-artist">
+                                <div class="song-name-album">
                                     <div class="song-name">
                                         Young  as the morning old as the sea
                                     </div>
-                                    <div class="song-artis">Passenger</div>
+                                    <div class="song-artist">Passenger</div>
                                 </div>
                             </td>
                             <td class="song-album">
@@ -270,6 +339,7 @@
                         </tr>
                     </table>
                 </div>
+            </div>
             </div>
         </div>
         <div class="footer-player">
@@ -303,16 +373,13 @@
             <div class="footer-player-right">
                 <div class="footer-player-right-buttons">
                     <img src="assets/Lyrics.svg" alt="">
-                    <img src="assets/Queue.svg" alt="">
-                    <img src="assets/Connect to a device.svg" alt="">
-                    <img src="assets/Volume.svg" alt="">
-                    <div class="player-slider">
-                        <input type="range" min="1" max="100" value="30" width="">
+                    <img src="assets/Queue.svg" class="filtered-img" alt="">
+                    <img src="assets/Connect to a device.svg" class="filtered-img" alt="">
+                    <img src="assets/Volume.svg" class="filtered-img" alt="">
+                    <div class="player-slider" style="margin-right: 20px; width: 200px;">
+                        <input type="range" min="1" max="100" value="30" width="" style="width:75px; position: relative; top:-5px;">
                 </div>
-                <img src="assets/Full screen.svg" alt="">
-                <div class="player-slider">
-                    
-                </div>
+                <img src="assets/Full screen.svg" class="filtered-img" alt="">
             </div>
         </div>
         </div> 
