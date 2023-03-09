@@ -12,12 +12,17 @@ html, body, * {
 
 body {
     box-sizing: border-box;
-    margin: 0px;
+    margin: 0;
     overflow-x: hidden;
     overflow-y: hidden;
     font-family: "Gotham SSm A", "Gotham Ssm B", "Helvatica Neue", Helvetica;
     max-height: 100vh;
     height: 100vh;
+}
+
+.home {
+    background-color: red;
+    mask:url(assets/About.svg) no-repeat center;
 }
 
 .container {
@@ -26,8 +31,12 @@ body {
     flex-direction: row;
 }
 
-.left{
-    height: 100%;
+.right {
+    width: 100%;
+}
+
+.left {
+
     background-color: black;
     position: relative;
     width: 300px;
@@ -39,6 +48,12 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
 
 .gray-filtered{
@@ -72,6 +87,13 @@ body {
     left: 8px;
 }
 
+.menu ul li:first-child() a img {
+    filter: invert(0.5) sepia(0) saturate(89) hue-rotate(75deg) !important;
+}
+.menu li:first-child span {
+    color:white !important;
+}
+
 .menu ul {
     list-style-type: none;
     margin: 0;
@@ -94,7 +116,7 @@ body {
 .current-song-cover img {
     position: absolute;
     width: 100%;
-    bottom: 120px;
+    bottom: 40px;
     left: 0;
 }
 
@@ -120,8 +142,8 @@ body {
     align-items: center;
 }
 
-.right {
-    width: 100%;
+.playlist-header {
+    padding: 20px;
 }
 
 .playlist-top-email {
@@ -133,8 +155,9 @@ body {
     color: white;
 }
 
-.playlist-top-email .arrow-container {
+.playlist-header .arrow-container {
     background-color: #545354;
+    margin: 2px;
 }
 
 .playlist-top-email span {
@@ -142,7 +165,6 @@ body {
 }
 
 .playlist-header {
-    padding: 20px;
     background: rgb(239,239,238);
     background: linear-gradient(180deg, rgba(239,239,238) 0%, rgba(120,120,121,1) 100%);
 }
@@ -157,9 +179,9 @@ body {
 .playlist-cover img {
     width: 250px;
     height: 250px;
-    box-shadow: 1px 2px 48px -2px rgba(0,0,0,0.67);
-    -webkit-box-shadow: 1px 2px 48px -2px rgba(0,0,0,0.67);
-    -moz-box-shadow: 1px 2px 48px -2px rgba(0,0,0,0.67);
+    box-shadow: 0px 2px 35px -1px rgba(0,0,0,0.45);
+-webkit-box-shadow: 0px 2px 35px -1px rgba(0,0,0,0.45);
+-moz-box-shadow: 0px 2px 35px -1px rgba(0,0,0,0.45);
 }
 
 .playlist-info {
@@ -170,14 +192,14 @@ body {
 .playlist-public {
     font-size: 12px;
     font-weight: 600;
-    font-family: "AvenirTStd-Black";
+    font-family: "AvenirLTStd-Black";
 }
 
 .playlist-title {
     font-size: 86px;
     font-weight: 1000;
     margin-top: 10px;
-    font-family: "AvenirTStd-Black";
+    font-family: "AvenirLTStd-Black";
 }
 
 .playlist-description {
@@ -185,7 +207,7 @@ body {
     font-weight: 200;
     margin-top: 28px;
     color: #A9A9A9;
-    font-family: "AvenirTStd-Black";
+    font-family: "AvenirLTStd-Black";
 }
 
 .playlist-stats img {
@@ -195,7 +217,7 @@ body {
 
 .playlist-stats span:first-of-type {
     font-weight: 1000;
-    font-family: "AvenirTStd-Black";
+    font-family: "AvenirLTStd-Black";
 
 }
 
@@ -204,11 +226,10 @@ body {
     justify-content: space-between;
 }
 
-.playlist-songs-container {
-    height: 100vh;
-    background: rgb(95,95,96);
-    background: linear-gradient(180deg, rgba(95,95,96,1) 0%, rgba(18,18,18,1) 25%, rgba(18,18,18,1) 100%);
-padding: 20px;
+.playlist-buttons-left, .playlist-buttons-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .playlist-buttons-resume-pause {
@@ -315,7 +336,7 @@ background: linear-gradient(180deg, rgba(95,95,95,1) 0%, rgba(18,18,18,1) 22%, r
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #a9a9a9;
+    background-color: #181818;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -348,6 +369,11 @@ background: linear-gradient(180deg, rgba(95,95,95,1) 0%, rgba(18,18,18,1) 22%, r
     padding: 15px;
 }
 
+.footer-player-middle-buttons, .footer-player-middle-slider {
+    display: flex;
+    justify-content: center;
+}
+
 .pause-button {
     position: relative;
     display: inline-block;
@@ -369,10 +395,10 @@ background: linear-gradient(180deg, rgba(95,95,95,1) 0%, rgba(18,18,18,1) 22%, r
 }
 
 .player-slider input {
-    -webkit-appearance: var(--spotify-color);
-    width: 40vw;
+    -webkit-appearance: var(--spotify-green);
+    width: 100%;
     height: 5px;
-    background-color: gray;
+    background-color: #6a6a6a;
     border-radius: 5px;
     position: relative;
     border: none;
@@ -396,15 +422,15 @@ background: linear-gradient(180deg, rgba(95,95,95,1) 0%, rgba(18,18,18,1) 22%, r
     top: -3px;
 }
 
-.footer-player-right-button {
+.footer-player-right-buttons {
     display: flex;
     flex-direction: row;
     margin-right: 30px;
 }
 
-.footer-player-right-button img {
+.footer-player-right-buttons img {
     width: 16px;
     height: 16px;
-    margin-right: 16px;
+    margin-right: 20px;
 }
 
